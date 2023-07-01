@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Barlow Semi Condensed";
+  padding: 75px 25px 25px;
+  background-color: hsl(210, 46%, 95%);
+}
+:root {
+  --margin-bot: 15px;
+  --grid-gap: 30px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "Daniel Daniel Jonathan Kira" "Jeanette Patrick Patrick Kira";
+    row-gap: var(--grid-gap);
+    column-gap: var(--grid-gap);
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .container .content {
+    margin-bottom: 0px;
+  }
+}
+@media (min-width: 768px) {
+  .sup-1 {
+    grid-area: Daniel;
+  }
+}
+@media (min-width: 768px) {
+  .sup-2 {
+    grid-area: Jonathan;
+  }
+}
+@media (min-width: 768px) {
+  .sup-3 {
+    grid-area: Jeanette;
+  }
+}
+@media (min-width: 768px) {
+  .sup-4 {
+    grid-area: Patrick;
+  }
+}
+@media (min-width: 768px) {
+  .sup-5 {
+    grid-area: Kira;
+  }
+}
+.content {
+  padding: 25px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  margin-bottom: var(--margin-bot);
+  position: relative;
+}
+.content > img {
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  width: 150px;
+  opacity: .6;
+}
+.content .profile {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--margin-bot);
+}
+.content .profile img {
+  width: 50px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-width: 2cap;
+  border-style: solid;
+  margin-right: 25px;
+}
+.content .profile h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+.content .profile p {
+  font-size: 15px;
+}
+.content > h3 {
+  font-weight: 600;
+  font-size: 25px;
+  margin-bottom: var(--margin-bot);
+}
+.content > p {
+  margin-bottom: var(--margin-bot);
+}
+.sup-1 {
+  background-color: hsl(263, 55%, 52%);
+}
+.sup-2 {
+  background-color: hsl(217, 19%, 35%);
+}
+.sup-3 ,.sup-5 {
+  background-color: hsl(0, 0%, 100%);
+}
+.sup-4 {
+  background-color: hsl(219, 29%, 14%);
+}
+.sup-1 .profile img { 
+  border-color: hsla(0, 0%, 81%, 50%);
+}
+.sup-4 img {
+  border-color: hsl(263, 55%, 52%);
+}
+.sup-2 img , .sup-3 img , .sup-5 img{
+  border-color: transparent;
+}
+.sup-1 h3 , .sup-2 h3 , .sup-4 h3{
+  color: hsl(0, 0%, 100%);
+}
+.sup-1 .profile p, .sup-2 .profile p , .sup-4 .profile p {
+  color: hsla(0, 0%, 100%, 50%);
+}
+.sup-1 > p , .sup-2 > p , .sup-4 > p {
+  color: hsla(0, 0%, 100%, 70%);
+}
+.sup-3 h3 , .sup-5 h3 {
+  color: hsl(219, 29%, 14%);
+}
+.sup-3 .profile p , .sup-5 .profile p {
+  color: hsla(219, 29%, 14%, 50%);
+}
+.sup-3 > p , .sup-5 > p {
+  color: hsla(219, 29%, 14%, 70%);
+}
