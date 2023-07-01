@@ -28,8 +28,8 @@ Users should be able to:
 ![small-devices](./screenshots/small_devices_2.png)
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Ah-Essam/Testimonials-grid-section.git)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [solution URL](https://github.com/Ah-Essam/Testimonials-grid-section.git)
+- Live Site URL: [live site URL](https://testimonials-grid-section-pf3d-h69vlkin2-ah-essam.vercel.app/)
 
 ## My process
 
